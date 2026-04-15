@@ -1,180 +1,117 @@
-# Brand classification (ADG codes)
+# 🤖 Agentic RAG System
 
-BiLSTM-based **text → ADG_CODE** classification for retail product data (Armenian / Latin), plus **evaluation**, **inference**, and an **ADG → brand / industry** lookup from the dataset.
+A comprehensive Retrieval-Augmented Generation (RAG) system built with FastAPI, React, and modern AI technologies. This system allows you to upload documents, generate embeddings, and ask questions about your content using advanced language models.
 
-**Running the project:** **[Client guide](docs/CLIENT_GUIDE.md)**.
+## 🏗️ Architecture
 
-**How the code fits together (metrics, files):** **[Code overview](docs/CODE_OVERVIEW.md)**.
-
-## Project layout
-
-```text
-├── data/
-│   └── brand_task.csv          # Source dataset
-├── artifacts/                  # Generated: models, reports, caches (*.keras gitignored)
-├── src/brand_classification/   # Application package
-│   ├── config.py                 # Paths (project root, data, artifacts)
-│   ├── preprocessing.py          # Text cleaning
-│   ├── data_loader.py          # CSV → training table
-│   ├── train.py
-│   ├── evaluate.py
-│   ├── predict.py
-│   └── adg_lookup.py           # Code → brand / category (empirical)
-├── tests/                       # pytest smoke tests
-├── docs/
-│   ├── CLIENT_GUIDE.md / .docx / .pdf
-│   └── CODE_OVERVIEW.md / .docx / .pdf
-├── pyproject.toml               # Dependencies and optional dev extras
-└── LICENSE                      # MIT
+```
+Agentic_RAG_System/
+├── backend/                 # FastAPI backend service
+│   ├── api/                # API routes and endpoints
+│   ├── core/               # Core configuration and settings
+│   ├── services/           # Business logic services
+│   ├── utils/              # Utility functions and logging
+│   ├── sample_documents/   # Test PDF and CSV documents
+│   └── requirements.txt    # Python dependencies
+├── frontend/               # React frontend application
+│   ├── src/                # Source code
+│   ├── public/             # Static assets
+│   └── package.json        # Node.js dependencies
+├── docs/                   # Documentation
+│   └── TESTING_GUIDE.md    # Comprehensive testing guide
+├── scripts/                # Utility scripts
+│   └── create_test_pdfs.py # PDF generation script
+└── README.md              # This file
 ```
 
-## Dataset (`data/brand_task.csv`)
+## ✨ Features
 
-| Column      | Description                                  |
-|------------|-----------------------------------------------|
-| `ADG_CODE` | Numeric label                                 |
-| `GOOD_NAME`| Product name                                  |
-| `BRAND`    | Brand                                         |
-| `CATEGORY` | Industry / category (e.g. Beverages)         |
+- **Document Ingestion**: PDF and CSV files → chunks → embeddings
+- **Medical CSV Support**: Automatic medical content detection and HIPAA-compliant PHI removal
+- **RAG Pipeline**: OpenAI + Pinecone for intelligent document retrieval
+- **FastAPI Endpoints**: RESTful APIs for chat and file management
+- **React UI**: Modern interface with Upload/Chat/Status tabs
+- **File Management**: Upload, delete, and replace file vectors from UI
+- **Medical Specialization**: Optimized for medical datasets and clinical documentation
 
-## Setup
+## 🚀 Run
 
-```bash
-cd /path/to/brand_detection_armenian_data
-python3 -m venv .venv
-source .venv/bin/activate          # Windows: .venv\Scripts\activate
-pip install -U pip
-pip install -e .
+### Backend
+```
+cd backend
+python3 -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+python main.py
 ```
 
-Install test dependencies (pytest):
+Ensure `.env` in `backend/` is configured:
+```
+OPENAI_API_KEY=sk-...
+OPENAI_EMBEDDING_MODEL=text-embedding-ada-002
+OPENAI_MODEL=gpt-3.5-turbo
 
-```bash
-pip install -e ".[dev]"
+PINECONE_API_KEY=pcsk-...
+PINECONE_INDEX_NAME=rag-documents
+# Region must match your Pinecone index host (e.g., ap-southeast-1)
+PINECONE_ENVIRONMENT=ap-southeast-1
 ```
 
-## Commands
-
-Run from the **repository root** after `pip install -e .`:
-
-| Task | Command |
-|------|---------|
-| Train BiLSTM | `python -m brand_classification.train` |
-| Evaluate | `python -m brand_classification.evaluate` |
-| Predict ADG from text | `python -m brand_classification.predict -n "…" -b "…" -c "…"` |
-| ADG → brand / industry | `python -m brand_classification.adg_lookup 2101` |
-
-## Evaluation results (BiLSTM)
-
-Metrics are computed on the **validation split** (15% holdout, `random_state=42`, stratified), matching the split used during training. **145** ADG classes after filtering; **282** validation rows.
-
-| Metric | Value |
-|--------|------:|
-| Accuracy | 0.4965 |
-| Precision (macro) | 0.2610 |
-| Recall (macro) | 0.3223 |
-| F1 score (macro) | 0.2684 |
-| Precision (weighted) | 0.5019 |
-| Recall (weighted) | 0.4965 |
-| F1 score (weighted) | 0.4770 |
-| Top-3 accuracy | 0.6631 |
-| Training-set accuracy (same model, reference) | 0.7439 |
-
-Macro averages are low on rare classes; weighted F1 (~0.48) reflects class frequency better. The train/validation gap suggests **overfitting** or a difficult multi-class problem with limited samples per code.
-
-The full **per-class** precision/recall/F1 table is written to [`artifacts/evaluation_report.txt`](artifacts/evaluation_report.txt) when you run `python -m brand_classification.evaluate` (regenerates the file).
-
-## Prediction examples (text → ADG_CODE)
-
-Top-5 softmax probabilities from `bilstm_best.keras` (same model as evaluation). Input format:  
-`GOOD_NAME [BRAND] … [CAT] …`.
-
-### Example A — Nescafe / Beverages
-
-Input: `Նեսկաֆե գոլդ 75գ [BRAND] Nescafe [CAT] Beverages`
-
-| Rank | ADG_CODE | Probability |
-|------|----------|------------:|
-| 1 | 2101 | 0.3242 |
-| 2 | 901 | 0.2894 |
-| 3 | 101 | 0.0415 |
-| 4 | 2009 | 0.0328 |
-| 5 | 1901 | 0.0273 |
-
-### Example B — Artfood / Beverages
-
-Input: `Կոմպոտ Արտֆուդ սերկևիլ ա/տ 1լ [BRAND] Artfood [CAT] Beverages`
-
-| Rank | ADG_CODE | Probability |
-|------|----------|------------:|
-| 1 | 2103 | 0.1318 |
-| 2 | 2009 | 0.1289 |
-| 3 | 2005 | 0.0867 |
-| 4 | 711 | 0.0577 |
-| 5 | 2001 | 0.0454 |
-
-### Example C — Samsung / Electronics
-
-Input: `LED Հեռուստացույց SAMSUNG UE65CU8000UXRU [BRAND] Samsung [CAT] Electronics`
-
-| Rank | ADG_CODE | Probability |
-|------|----------|------------:|
-| 1 | 8517 | 0.0732 |
-| 2 | 8508 | 0.0492 |
-| 3 | 8450 | 0.0488 |
-| 4 | 8418 | 0.0407 |
-| 5 | 8471 | 0.0385 |
-
-Reproduce:
-
-```bash
-python -m brand_classification.predict -n "Նեսկաֆե գոլդ 75գ" -b "Nescafe" -c "Beverages" --top-k 5
+### Frontend
+```
+cd frontend
+npm install
+npm run dev
 ```
 
-## ADG lookups (code → brand & industry)
+- Frontend: http://localhost:5173
+- API docs: http://localhost:8000/docs
 
-These use **majority counts** in `data/brand_task.csv`, not the neural network.
+## 🧪 Test
 
-### ADG_CODE 2101
+- Use Upload tab to add PDFs or CSV files from `backend/sample_documents/`
+- Ask questions in Chat
+- Manage vectors with Replace/Delete buttons after upload completes
+- Status tab shows Vector DB and LLM health
 
-| Field | Value | Confidence |
-|-------|--------|------------:|
-| Brand | Nescafe | 59.3% |
-| Industry | Beverages | 70.4% |
+## 🔧 Troubleshooting
 
-### ADG_CODE 2009
+### Pinecone SSL / "Max retries exceeded ... SSLError(FileNotFoundError)"
+- Create a fresh venv with modern Python (prefer 3.11+)
+- Install HTTP stack with certs:
+```
+pip install --upgrade pip certifi requests "urllib3<2.2"
+```
+- We set `SSL_CERT_FILE`/`REQUESTS_CA_BUNDLE` to `certifi.where()` in `backend/core/config.py` automatically.
+- Restart backend.
 
-| Field | Value | Confidence |
-|-------|--------|------------:|
-| Brand | Artfood (tied with Coca-Cola, 4 rows each) | 33.3% each |
-| Industry | Beverages | 83.3% |
+### Region mismatch
+- If your Pinecone index host looks like `...aped...`, set `PINECONE_ENVIRONMENT=ap-southeast-1` (or the region where your index resides).
+- `backend/services/vectordb_service.py` uses `PINECONE_ENVIRONMENT` for `ServerlessSpec`.
 
-Reproduce:
-
-```bash
-python -m brand_classification.adg_lookup 2101
-python -m brand_classification.adg_lookup 2009 --json
+### Missing deps (e.g., `ModuleNotFoundError: langgraph`)
+- Activate venv and run:
+```
+pip install -r requirements.txt
 ```
 
-## Artifacts (`artifacts/`)
+### Health shows Degraded
+- Open http://localhost:8000/files/health and verify:
+  - `vectordb: true` (Pinecone reachable and index OK)
+  - `llm: true` (OpenAI reachable)
+- Fix `.env` keys or region and restart.
 
-| File | Description |
-|------|-------------|
-| `bilstm_best.keras`, `bilstm_final.keras` | Trained models (large; not committed) |
-| `label_encoder_classes.json` | Class index → `ADG_CODE` |
-| `cleaned_training_data.csv` | Frozen table for evaluation |
-| `evaluation_report.txt` | Written by `evaluate` |
-| `adg_brand_category_stats.json` | Cache for ADG lookup |
+## 📚 API Endpoints
 
-After clone, run **training** once to create `.keras` files locally (or copy them into `artifacts/`).
+- `POST /chat/` – query with RAG
+- `GET /health` – basic API health
+- `POST /files/add_file` – upload/process PDF or CSV files
+- `POST /files/csv_info` – analyze CSV file before upload (medical content detection)
+- `PUT /files/update_file/{file_id}` – replace vectors with a new PDF
+- `DELETE /files/delete_file/{file_id}` – remove vectors by file
+- `GET /files/health` – RAG service health (LLM + Vector DB)
 
-## Tests
+## 📖 Docs
 
-```bash
-pip install -e ".[dev]"
-pytest
-```
-
-## License
-
-See [LICENSE](LICENSE) (MIT).
+- See `docs/TESTING_GUIDE.md` for detailed testing scenarios and datasets.
