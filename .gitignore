@@ -5,3 +5,10 @@ __pycache__/
 *.keras
 .pytest_cache/
 .mypy_cache/
+
+# RubberDuck indexer config (contains auth token)
+.rubberduck/
+
+# Frontend build / tooling noise
+frontend/dist/
+frontend/node_modules/.tmp/
