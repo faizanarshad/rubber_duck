@@ -1,0 +1,18 @@
+---
+description: Use RubberDuck Schema-Code-API Drift Pro
+alwaysApply: false
+---
+
+When the user asks for schema drift, API contract drift, DB/type/API consistency, model-field mismatch, nullability/default/validation drift, generated-client breakage, migration risk, or schema-code-api comparison, use the `rubberduck-schema-code-api-drift-pro` skill.
+
+Read:
+
+`.cursor/skills/rubberduck-schema-code-api-drift-pro/SKILL.md`
+
+Read `.cursor/skills/rubberduck-schema-code-api-drift-pro/RUBBERDUCK-CI-BOOTSTRAP.md` before RubberDuck setup. If the target is local-only or inaccessible to the RubberDuck GitHub App, mirror/push it to an authorized GitHub repo and run `detailed_repo_analysis(..., semantic_mode="full")` there until CI semantic full completes. Local indexing is only a post-CI fallback for semantic loading gaps, not Codebase Intelligence Phase 2.
+
+Start RubberDuck-powered status, blocker, validation, report, and final responses with `🦆` according to `.cursor/skills/rubberduck-schema-code-api-drift-pro/RUBBERDUCK-RESPONSE-MARKER.md`.
+
+If the task should continue into change impact, remediation planning, build, or autonomous mode, use `.cursor/skills/rubberduck-schema-code-api-drift-pro/RUBBERDUCK-SKILL-ADVISOR.md` to recommend the next order and approval mode.
+
+Follow the skill exactly. Use RubberDuck codebase intelligence and semantic intelligence with `semantic_mode="full"`. Do not interrupt halfway after setup/discovery unless the target is missing or RubberDuck tooling blocks the primary report.

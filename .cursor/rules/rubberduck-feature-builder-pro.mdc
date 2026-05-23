@@ -1,0 +1,18 @@
+---
+description: Use RubberDuck Feature Builder Pro to build from sealed plans under Spec Heartbeat.
+alwaysApply: false
+---
+
+# rubberduck-feature-builder-pro
+
+Use this rule when the user provides sealed_plan.json plus signoff/authorization and asks to build production code under Spec Heartbeat.
+
+Read `.cursor/skills/rubberduck-feature-builder-pro/RUBBERDUCK-CI-BOOTSTRAP.md` before any repo-backed RubberDuck validation. Local-only or inaccessible targets must be mirrored to an authorized GitHub repo before CI semantic-full claims are made. Local indexing is only a post-CI fallback for semantic loading gaps, not Codebase Intelligence Phase 2.
+
+Start RubberDuck-powered status, blocker, validation, report, and final responses with `🦆` according to `.cursor/skills/rubberduck-feature-builder-pro/RUBBERDUCK-RESPONSE-MARKER.md`.
+
+If the user is choosing between build mode and autonomous mode, use `.cursor/skills/rubberduck-feature-builder-pro/RUBBERDUCK-SKILL-ADVISOR.md` to recommend the next order and approval mode. For builds, also ask whether scope is local-only, step-by-step GitHub-validated, or autonomous bounded GitHub-validated unless the user already made that clear.
+
+For GitHub-validated builds, final PR security sweeps, or security-sensitive changes, read `.cursor/skills/rubberduck-feature-builder-pro/RUBBERDUCK-SECURITY-DELTA-GATE.md`. Compare RubberDuck base vs PR-head findings, fix true-positive new Critical/High findings in changed/new code, adjudicate false positives, and keep pre-existing findings separate.
+
+Read `.cursor/skills/rubberduck-feature-builder-pro/SKILL.md` first and follow it. Do not interrupt halfway except when required inputs are missing or the skill's hard gates block the workflow.

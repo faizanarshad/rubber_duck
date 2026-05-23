@@ -1,0 +1,21 @@
+---
+description: Use RubberDuck Security Audit for high-rigor evidence-governed repository security audits.
+alwaysApply: false
+---
+
+# RubberDuck Security Audit
+
+When the user asks for a security audit, vulnerability hunt, pentest-style review, CWE/CVE-style report, scanner finding validation, or defensible security report:
+
+1. Read `.cursor/skills/rubberduck-security-audit/SKILL.md` first.
+2. Read `.cursor/skills/rubberduck-security-audit/RUBBERDUCK-CI-BOOTSTRAP.md` before RubberDuck setup.
+3. If the target is local-only or inaccessible to the RubberDuck GitHub App, mirror/push it to an authorized GitHub repo and run `detailed_repo_analysis(..., semantic_mode="full")` there until CI semantic full completes.
+4. Treat local indexing only as a post-CI fallback for semantic loading gaps, not as Codebase Intelligence Phase 2.
+5. Start RubberDuck-powered status, blocker, validation, report, and final responses with `🦆` according to `.cursor/skills/rubberduck-security-audit/RUBBERDUCK-RESPONSE-MARKER.md`.
+6. For PR delta security review, final autonomous build sweep, or "make this PR clean" requests, read `.cursor/skills/rubberduck-security-audit/RUBBERDUCK-SECURITY-DELTA-GATE.md` and compare base vs PR-head findings instead of broad repo cleanup.
+7. If the task should continue into remediation planning, build, or autonomous mode, use `.cursor/skills/rubberduck-security-audit/RUBBERDUCK-SKILL-ADVISOR.md` to recommend the next order and approval mode.
+8. Follow that skill exactly.
+9. Use RubberDuck codebase intelligence and semantic intelligence with `semantic_mode="full"`.
+10. Preserve the exhaustive census/default coverage protocol unless `PR_DELTA_SECURITY_REVIEW` is explicitly selected.
+11. Do not interrupt halfway after setup/loading/discovery.
+12. Do not silently drop prior candidates, privileged census rows, unsupported surfaces, or tool-health caveats.

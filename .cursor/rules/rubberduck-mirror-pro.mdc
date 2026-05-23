@@ -1,0 +1,21 @@
+---
+description: Use RubberDuck Mirror Pro for bounded behavioral equivalence checks, refactor safety, and AI patch replacement verification.
+alwaysApply: false
+---
+
+# RubberDuck Mirror Pro
+
+When the user asks whether two implementations are equivalent, whether a refactor preserves behavior, whether an AI-generated patch is safe, whether one helper can replace another, or whether before/after code has behavioral drift:
+
+1. Read `.cursor/skills/rubberduck-mirror-pro/SKILL.md` first.
+2. Read `.cursor/skills/rubberduck-mirror-pro/RUBBERDUCK-CI-BOOTSTRAP.md` before repo-backed RubberDuck setup.
+3. If the target is local-only or inaccessible to the RubberDuck GitHub App, mirror/push it to an authorized GitHub repo and run `detailed_repo_analysis(..., semantic_mode="full")` there until CI semantic full completes.
+4. Treat local indexing only as a post-CI fallback for semantic loading gaps, not as Codebase Intelligence Phase 2.
+5. Start RubberDuck-powered status, blocker, validation, report, and final responses with `🦆` according to `.cursor/skills/rubberduck-mirror-pro/RUBBERDUCK-RESPONSE-MARKER.md`.
+6. If the task should continue into change impact, planning, build, or autonomous mode, use `.cursor/skills/rubberduck-mirror-pro/RUBBERDUCK-SKILL-ADVISOR.md` to recommend the next order and approval mode.
+7. Follow that skill exactly.
+8. Use RubberDuck codebase intelligence and semantic intelligence with `semantic_mode="full"`.
+9. Declare mode as rename-refactor, sibling-equivalence, ai-patch-verify, or cross-language.
+10. State the preserved contract before rendering verdict.
+11. Do not interrupt halfway after setup/loading/discovery unless the target specs are missing or RubberDuck blocks the primary report.
+12. Produce the full evidence pack and run all validators before final response.

@@ -1,0 +1,18 @@
+---
+description: Use RubberDuck Autonomous Feature Mode for bounded autonomous Plan + Build orchestration.
+alwaysApply: false
+---
+
+# rubberduck-autonomous-feature-mode
+
+Use this rule when the user asks for autonomous plan-and-build mode under an autonomy envelope.
+
+Read `.cursor/skills/rubberduck-autonomous-feature-mode/RUBBERDUCK-CI-BOOTSTRAP.md` before Planner/Builder invokes any repo-backed RubberDuck validation. Local-only or inaccessible targets must be mirrored to an authorized GitHub repo before CI semantic-full claims are made. Local indexing is only a post-CI fallback for semantic loading gaps, not Codebase Intelligence Phase 2.
+
+Start RubberDuck-powered status, blocker, validation, report, and final responses with `🦆` according to `.cursor/skills/rubberduck-autonomous-feature-mode/RUBBERDUCK-RESPONSE-MARKER.md`.
+
+If the user has not explicitly chosen autonomous mode, use `.cursor/skills/rubberduck-autonomous-feature-mode/RUBBERDUCK-SKILL-ADVISOR.md` to offer review-each-phase, planning-with-signoff, or bounded autonomous mode before starting Auto.
+
+For autonomous GitHub-validated builds, final PR security sweeps, or security-sensitive changes, read `.cursor/skills/rubberduck-autonomous-feature-mode/RUBBERDUCK-SECURITY-DELTA-GATE.md`. Compare RubberDuck base vs PR-head findings, fix true-positive new Critical/High findings only inside the autonomy envelope, adjudicate false positives, and keep pre-existing findings separate.
+
+Read `.cursor/skills/rubberduck-autonomous-feature-mode/SKILL.md` first and follow it. Do not interrupt halfway except when required inputs are missing or the skill's hard gates block the workflow.

@@ -1,0 +1,383 @@
+{
+  "builder_github_gate": {
+    "checked": true,
+    "failures": []
+  },
+  "checks": {
+    "claude-code:rubberduck-autonomous-feature-mode:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: Autonomous Feature Mode smoke test passed\n"
+    },
+    "claude-code:rubberduck-autonomous-feature-mode:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Autonomous Feature Mode skill structure verified\n"
+    },
+    "claude-code:rubberduck-change-impact-pro:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: Change Impact Pro smoke test passed\n"
+    },
+    "claude-code:rubberduck-change-impact-pro:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Change Impact Pro skill structure verified\n"
+    },
+    "claude-code:rubberduck-codebase-atlas-pro:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: smoke test passed\n"
+    },
+    "claude-code:rubberduck-codebase-atlas-pro:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck UC1 Codebase Atlas Pro Skill structure verified\n"
+    },
+    "claude-code:rubberduck-doppelganger-hunt-pro:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: smoke tests passed\n"
+    },
+    "claude-code:rubberduck-doppelganger-hunt-pro:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Doppelganger Hunt Pro skill structure present\n"
+    },
+    "claude-code:rubberduck-feature-builder-pro:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: Feature Builder Pro smoke test passed\n"
+    },
+    "claude-code:rubberduck-feature-builder-pro:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Feature Builder Pro skill structure verified\n"
+    },
+    "claude-code:rubberduck-feature-planner-pro:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: Feature Planner Pro smoke test passed\n"
+    },
+    "claude-code:rubberduck-feature-planner-pro:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Feature Planner Pro skill structure verified\n"
+    },
+    "claude-code:rubberduck-mirror-pro:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: Mirror Pro smoke test passed\n"
+    },
+    "claude-code:rubberduck-mirror-pro:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Mirror Pro skill structure present\n"
+    },
+    "claude-code:rubberduck-schema-code-api-drift-pro:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: Schema-Code-API Drift Pro smoke test passed\n"
+    },
+    "claude-code:rubberduck-schema-code-api-drift-pro:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Schema-Code-API Drift Pro skill structure present\n"
+    },
+    "claude-code:rubberduck-security-audit:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: Security Audit smoke test passed\n"
+    },
+    "claude-code:rubberduck-security-audit:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Security Audit skill structure present; no bundled private regression corpus required.\n"
+    },
+    "codex:rubberduck-autonomous-feature-mode:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: Autonomous Feature Mode smoke test passed\n"
+    },
+    "codex:rubberduck-autonomous-feature-mode:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Autonomous Feature Mode skill structure verified\n"
+    },
+    "codex:rubberduck-change-impact-pro:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: Change Impact Pro smoke test passed\n"
+    },
+    "codex:rubberduck-change-impact-pro:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Change Impact Pro skill structure verified\n"
+    },
+    "codex:rubberduck-codebase-atlas-pro:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: smoke test passed\n"
+    },
+    "codex:rubberduck-codebase-atlas-pro:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck UC1 Codebase Atlas Pro Skill structure verified\n"
+    },
+    "codex:rubberduck-doppelganger-hunt-pro:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: smoke tests passed\n"
+    },
+    "codex:rubberduck-doppelganger-hunt-pro:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Doppelganger Hunt Pro skill structure present\n"
+    },
+    "codex:rubberduck-feature-builder-pro:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: Feature Builder Pro smoke test passed\n"
+    },
+    "codex:rubberduck-feature-builder-pro:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Feature Builder Pro skill structure verified\n"
+    },
+    "codex:rubberduck-feature-planner-pro:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: Feature Planner Pro smoke test passed\n"
+    },
+    "codex:rubberduck-feature-planner-pro:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Feature Planner Pro skill structure verified\n"
+    },
+    "codex:rubberduck-mirror-pro:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: Mirror Pro smoke test passed\n"
+    },
+    "codex:rubberduck-mirror-pro:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Mirror Pro skill structure present\n"
+    },
+    "codex:rubberduck-schema-code-api-drift-pro:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: Schema-Code-API Drift Pro smoke test passed\n"
+    },
+    "codex:rubberduck-schema-code-api-drift-pro:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Schema-Code-API Drift Pro skill structure present\n"
+    },
+    "codex:rubberduck-security-audit:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: Security Audit smoke test passed\n"
+    },
+    "codex:rubberduck-security-audit:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Security Audit skill structure present; no bundled private regression corpus required.\n"
+    },
+    "cursor:rubberduck-autonomous-feature-mode:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: Autonomous Feature Mode smoke test passed\n"
+    },
+    "cursor:rubberduck-autonomous-feature-mode:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Autonomous Feature Mode skill structure verified\n"
+    },
+    "cursor:rubberduck-change-impact-pro:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: Change Impact Pro smoke test passed\n"
+    },
+    "cursor:rubberduck-change-impact-pro:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Change Impact Pro skill structure verified\n"
+    },
+    "cursor:rubberduck-codebase-atlas-pro:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: smoke test passed\n"
+    },
+    "cursor:rubberduck-codebase-atlas-pro:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck UC1 Codebase Atlas Pro Skill structure verified\n"
+    },
+    "cursor:rubberduck-doppelganger-hunt-pro:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: smoke tests passed\n"
+    },
+    "cursor:rubberduck-doppelganger-hunt-pro:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Doppelganger Hunt Pro skill structure present\n"
+    },
+    "cursor:rubberduck-feature-builder-pro:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: Feature Builder Pro smoke test passed\n"
+    },
+    "cursor:rubberduck-feature-builder-pro:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Feature Builder Pro skill structure verified\n"
+    },
+    "cursor:rubberduck-feature-planner-pro:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: Feature Planner Pro smoke test passed\n"
+    },
+    "cursor:rubberduck-feature-planner-pro:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Feature Planner Pro skill structure verified\n"
+    },
+    "cursor:rubberduck-mirror-pro:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: Mirror Pro smoke test passed\n"
+    },
+    "cursor:rubberduck-mirror-pro:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Mirror Pro skill structure present\n"
+    },
+    "cursor:rubberduck-schema-code-api-drift-pro:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: Schema-Code-API Drift Pro smoke test passed\n"
+    },
+    "cursor:rubberduck-schema-code-api-drift-pro:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Schema-Code-API Drift Pro skill structure present\n"
+    },
+    "cursor:rubberduck-security-audit:smoke_test_skill.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: Security Audit smoke test passed\n"
+    },
+    "cursor:rubberduck-security-audit:verify_skill_structure.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "OK: RubberDuck Security Audit skill structure present; no bundled private regression corpus required.\n"
+    },
+    "verification:check_skill_routing.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\n  \"tests_run\": 9,\n  \"failures\": 0\n}\nOK: skill routing checks passed\n"
+    },
+    "verification:run_power_skill_synthetic_tests.py": {
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\n  \"failed\": 0,\n  \"passed\": 35,\n  \"tests\": [\n    {\n      \"exit_code\": 0,\n      \"expected\": \"pass\",\n      \"name\": \"planner valid sealed plan\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-planner-pro/scripts/validate_sealed_plan.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"OK: sealed_plan contract validated\\n\"\n    },\n    {\n      \"exit_code\": 2,\n      \"expected\": \"fail\",\n      \"name\": \"planner rejects mutable signoff\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-planner-pro/scripts/validate_sealed_plan.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"FAIL\\n - sealed_plan contains mutable user_signoff_received; use SIGNOFF.json\\n\"\n    },\n    {\n      \"exit_code\": 0,\n      \"expected\": \"pass\",\n      \"name\": \"planner valid test diff\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-planner-pro/scripts/validate_test_diff_contract.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"OK: test_diff contract looks tests-first\\n\"\n    },\n    {\n      \"exit_code\": 2,\n      \"expected\": \"fail\",\n      \"name\": \"planner rejects non-test diff\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-planner-pro/scripts/validate_test_diff_contract.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"FAIL\\n - diff does not appear to contain tests\\n\"\n    },\n    {\n      \"exit_code\": 0,\n      \"expected\": \"pass\",\n      \"name\": \"builder valid signoff\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-builder-pro/scripts/validate_signoff.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"OK: signoff/authorization validates sealed plan hash\\n\"\n    },\n    {\n      \"exit_code\": 2,\n      \"expected\": \"fail\",\n      \"name\": \"builder rejects missing signoff\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-builder-pro/scripts/validate_build_inputs.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"FAIL\\n - SIGNOFF.json or AUTO_AUTHORIZATION.json missing\\n\"\n    },\n    {\n      \"exit_code\": 2,\n      \"expected\": \"fail\",\n      \"name\": \"builder rejects bad signoff hash\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-builder-pro/scripts/validate_signoff.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"FAIL\\n - sealed_plan_sha256 mismatch\\n\"\n    },\n    {\n      \"exit_code\": 0,\n      \"expected\": \"pass\",\n      \"name\": \"builder valid heartbeat\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-builder-pro/scripts/validate_heartbeat.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"OK: heartbeat validates\\n\"\n    },\n    {\n      \"exit_code\": 2,\n      \"expected\": \"fail\",\n      \"name\": \"builder rejects green without evidence\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-builder-pro/scripts/validate_heartbeat.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"FAIL\\n - H1_acceptance_criteria: GREEN without evidence\\n\"\n    },\n    {\n      \"exit_code\": 0,\n      \"expected\": \"pass\",\n      \"name\": \"builder valid audit log\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-builder-pro/scripts/validate_audit_log.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"OK: audit log validates\\n\"\n    },\n    {\n      \"exit_code\": 2,\n      \"expected\": \"fail\",\n      \"name\": \"builder rejects incomplete audit log\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-builder-pro/scripts/validate_audit_log.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"FAIL\\n - record 0 missing heartbeat_snapshot\\n\"\n    },\n    {\n      \"exit_code\": 0,\n      \"expected\": \"pass\",\n      \"name\": \"builder valid local-pending final package\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-builder-pro/scripts/validate_final_build_package.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"OK: final build package validates\\n\"\n    },\n    {\n      \"exit_code\": 0,\n      \"expected\": \"pass\",\n      \"name\": \"builder valid full repo-backed final package\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-builder-pro/scripts/validate_final_build_package.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"OK: final build package validates\\n\"\n    },\n    {\n      \"exit_code\": 2,\n      \"expected\": \"fail\",\n      \"name\": \"builder rejects full validation without repo evidence\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-builder-pro/scripts/validate_final_build_package.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"FAIL: FULL_REPO_BACKED_RUBBERDUCK_VALIDATED requires repo-backed evidence\\n - missing github-publish.md\\n - missing repo-backed-rubberduck-validation.md\\n - missing indexed-files-coverage.md\\n\"\n    },\n    {\n      \"exit_code\": 2,\n      \"expected\": \"fail\",\n      \"name\": \"builder rejects local pending with full-validation claim\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-builder-pro/scripts/validate_final_build_package.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"FAIL: non-full validation label cannot claim full RubberDuck validation\\n\"\n    },\n    {\n      \"exit_code\": 2,\n      \"expected\": \"fail\",\n      \"name\": \"builder rejects missing security delta evidence\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-builder-pro/scripts/validate_final_build_package.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"FAIL: security delta evidence/status invalid\\n - missing security-baseline-rubberduck.md\\n - missing security-pr-head-rubberduck.md\\n - missing security-delta.md\\n - missing security-fix-loop-history.json\\n - missing finding-adjudication.json\\n - missing or invalid security-delta.json\\n\"\n    },\n    {\n      \"exit_code\": 2,\n      \"expected\": \"fail\",\n      \"name\": \"builder rejects PR_READY with blocked security delta\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-builder-pro/scripts/validate_final_build_package.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"FAIL: PR_READY.diff exists but security delta is blocked\\n\"\n    },\n    {\n      \"exit_code\": 0,\n      \"expected\": \"pass\",\n      \"name\": \"builder accepts pre-existing high as non-blocking\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-builder-pro/scripts/validate_final_build_package.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"OK: final build package validates\\n\"\n    },\n    {\n      \"exit_code\": 0,\n      \"expected\": \"pass\",\n      \"name\": \"builder accepts adjudicated new finding\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-builder-pro/scripts/validate_final_build_package.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"OK: final build package validates\\n\"\n    },\n    {\n      \"exit_code\": 2,\n      \"expected\": \"fail\",\n      \"name\": \"builder rejects repo-clean claim with pre-existing findings\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-builder-pro/scripts/validate_final_build_package.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"FAIL: security delta evidence/status invalid\\n - BUILD.md claims repo is clean while pre_existing_findings are present\\n\"\n    },\n    {\n      \"exit_code\": 2,\n      \"expected\": \"fail\",\n      \"name\": \"builder rejects missing PR_READY\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-builder-pro/scripts/validate_final_build_package.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"FAIL: BUILD.md references PR_READY.diff but file absent\\n\"\n    },\n    {\n      \"exit_code\": 2,\n      \"expected\": \"fail\",\n      \"name\": \"builder rejects PR_READY without PASS validation\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-builder-pro/scripts/validate_final_build_package.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"FAIL: PR_READY.diff exists but validation-history.json has no PASS verdict\\n\"\n    },\n    {\n      \"exit_code\": 2,\n      \"expected\": \"fail\",\n      \"name\": \"builder rejects off-limits touched file\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-builder-pro/scripts/validate_final_build_package.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"FAIL: off-limits files touched\\n - src/off_limits.py\\n\"\n    },\n    {\n      \"exit_code\": 0,\n      \"expected\": \"pass\",\n      \"name\": \"builder valid build inputs\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-builder-pro/scripts/validate_build_inputs.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"OK: build inputs valid\\n\"\n    },\n    {\n      \"exit_code\": 2,\n      \"expected\": \"fail\",\n      \"name\": \"builder rejects mutable plan in inputs\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-feature-builder-pro/scripts/validate_build_inputs.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"FAIL\\n - sealed plan contains mutable signoff state\\n\"\n    },\n    {\n      \"exit_code\": 0,\n      \"expected\": \"pass\",\n      \"name\": \"auto valid envelope\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-autonomous-feature-mode/scripts/validate_autonomy_envelope.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"OK: autonomy envelope validates\\n\"\n    },\n    {\n      \"exit_code\": 2,\n      \"expected\": \"fail\",\n      \"name\": \"auto rejects invalid envelope\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-autonomous-feature-mode/scripts/validate_autonomy_envelope.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"FAIL\\n - tier must be QUICK/STANDARD/DEEP\\n\"\n    },\n    {\n      \"exit_code\": 2,\n      \"expected\": \"fail\",\n      \"name\": \"auto rejects zero max_iterations\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-autonomous-feature-mode/scripts/validate_autonomy_envelope.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"FAIL\\n - max_iterations must be positive\\n\"\n    },\n    {\n      \"exit_code\": 0,\n      \"expected\": \"pass\",\n      \"name\": \"auto valid audit\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-autonomous-feature-mode/scripts/validate_auto_audit.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"OK: auto audit validates\\n\"\n    },\n    {\n      \"exit_code\": 0,\n      \"expected\": \"pass\",\n      \"name\": \"auto valid audit with security delta\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-autonomous-feature-mode/scripts/validate_auto_audit.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"OK: auto audit validates\\n\"\n    },\n    {\n      \"exit_code\": 2,\n      \"expected\": \"fail\",\n      \"name\": \"auto rejects complete without builder validation\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-autonomous-feature-mode/scripts/validate_auto_audit.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"FAIL\\n - complete final_status without builder.validation_passed\\n\"\n    },\n    {\n      \"exit_code\": 2,\n      \"expected\": \"fail\",\n      \"name\": \"auto rejects complete without planner completion\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-autonomous-feature-mode/scripts/validate_auto_audit.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"FAIL\\n - complete final_status without planner.status complete\\n\"\n    },\n    {\n      \"exit_code\": 2,\n      \"expected\": \"fail\",\n      \"name\": \"auto rejects off-limits touched file\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-autonomous-feature-mode/scripts/validate_auto_audit.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"FAIL\\n - off-limits file touched: src/off_limits.py\\n\"\n    },\n    {\n      \"exit_code\": 2,\n      \"expected\": \"fail\",\n      \"name\": \"auto rejects missing required security delta\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-autonomous-feature-mode/scripts/validate_auto_audit.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"FAIL\\n - security_delta_required without security_delta.status\\n\"\n    },\n    {\n      \"exit_code\": 2,\n      \"expected\": \"fail\",\n      \"name\": \"auto rejects blocked security delta completion\",\n      \"passed\": true,\n      \"script\": \"codex/skills/rubberduck-autonomous-feature-mode/scripts/validate_auto_audit.py\",\n      \"stderr\": \"\",\n      \"stdout\": \"FAIL\\n - complete final_status without clean/adjudicated security delta\\n - complete final_status with blocked security delta: BLOCKED_NEW_UNRESOLVED_FINDINGS\\n - complete final_status with security_delta.unresolved_blockers\\n\"\n    }\n  ],\n  \"tests_run\": 35\n}\n"
+    }
+  },
+  "ci_bootstrap": {
+    "checked": true,
+    "failures": []
+  },
+  "cursor_rules": {
+    "cursor/.cursor/rules/rubberduck-autonomous-feature-mode.mdc": true,
+    "cursor/.cursor/rules/rubberduck-change-impact-pro.mdc": true,
+    "cursor/.cursor/rules/rubberduck-codebase-atlas-pro.mdc": true,
+    "cursor/.cursor/rules/rubberduck-doppelganger-hunt-pro.mdc": true,
+    "cursor/.cursor/rules/rubberduck-feature-builder-pro.mdc": true,
+    "cursor/.cursor/rules/rubberduck-feature-planner-pro.mdc": true,
+    "cursor/.cursor/rules/rubberduck-mirror-pro.mdc": true,
+    "cursor/.cursor/rules/rubberduck-schema-code-api-drift-pro.mdc": true,
+    "cursor/.cursor/rules/rubberduck-security-audit.mdc": true
+  },
+  "failures": [],
+  "response_marker": {
+    "checked": true,
+    "failures": []
+  },
+  "root": "<package_root>",
+  "safety_hits": [],
+  "security_delta_gate": {
+    "checked": true,
+    "failures": []
+  },
+  "skill_advisor": {
+    "checked": true,
+    "failures": []
+  },
+  "skill_hashes": {
+    "rubberduck-autonomous-feature-mode": {
+      "claude-code": "72339a907de46076e79b756835f4253a2f88f50fc08c3e4b62fa55cec2d90da9",
+      "codex": "72339a907de46076e79b756835f4253a2f88f50fc08c3e4b62fa55cec2d90da9",
+      "cursor": "72339a907de46076e79b756835f4253a2f88f50fc08c3e4b62fa55cec2d90da9"
+    },
+    "rubberduck-change-impact-pro": {
+      "claude-code": "4e28c0d52b6724ba4b622387a35b46d7cc7d86ef6ac2a281f13109396b2c7993",
+      "codex": "4e28c0d52b6724ba4b622387a35b46d7cc7d86ef6ac2a281f13109396b2c7993",
+      "cursor": "4e28c0d52b6724ba4b622387a35b46d7cc7d86ef6ac2a281f13109396b2c7993"
+    },
+    "rubberduck-codebase-atlas-pro": {
+      "claude-code": "4c05734c1ed31ef09dd65e5552ec18724415215e2fbb045d116d0d292e2fde94",
+      "codex": "4c05734c1ed31ef09dd65e5552ec18724415215e2fbb045d116d0d292e2fde94",
+      "cursor": "4c05734c1ed31ef09dd65e5552ec18724415215e2fbb045d116d0d292e2fde94"
+    },
+    "rubberduck-doppelganger-hunt-pro": {
+      "claude-code": "0cca5c3cf91a361089ae50beba2579b7a98b943af65bc59099c58868e6da57fd",
+      "codex": "0cca5c3cf91a361089ae50beba2579b7a98b943af65bc59099c58868e6da57fd",
+      "cursor": "0cca5c3cf91a361089ae50beba2579b7a98b943af65bc59099c58868e6da57fd"
+    },
+    "rubberduck-feature-builder-pro": {
+      "claude-code": "ac8dcad7626e166c79e7b940e7f6bf49a228fa5aed905b20a743c24a5c6d5c1d",
+      "codex": "ac8dcad7626e166c79e7b940e7f6bf49a228fa5aed905b20a743c24a5c6d5c1d",
+      "cursor": "ac8dcad7626e166c79e7b940e7f6bf49a228fa5aed905b20a743c24a5c6d5c1d"
+    },
+    "rubberduck-feature-planner-pro": {
+      "claude-code": "20628e9a0d9014afdd31cdffa9d76a3f46a12330f7a9af80fd5d2321aaf7387a",
+      "codex": "20628e9a0d9014afdd31cdffa9d76a3f46a12330f7a9af80fd5d2321aaf7387a",
+      "cursor": "20628e9a0d9014afdd31cdffa9d76a3f46a12330f7a9af80fd5d2321aaf7387a"
+    },
+    "rubberduck-mirror-pro": {
+      "claude-code": "aafaf45c6c761e82b8d4c9833188da5317f5112256763d7cb164de91d41efd87",
+      "codex": "aafaf45c6c761e82b8d4c9833188da5317f5112256763d7cb164de91d41efd87",
+      "cursor": "aafaf45c6c761e82b8d4c9833188da5317f5112256763d7cb164de91d41efd87"
+    },
+    "rubberduck-schema-code-api-drift-pro": {
+      "claude-code": "740195a091748a3d123a73e1b0d9372695bb91732219bac2e1258e33cc784050",
+      "codex": "740195a091748a3d123a73e1b0d9372695bb91732219bac2e1258e33cc784050",
+      "cursor": "740195a091748a3d123a73e1b0d9372695bb91732219bac2e1258e33cc784050"
+    },
+    "rubberduck-security-audit": {
+      "claude-code": "cfe98ae0cce6adb9af011d5855d5a58721e6c92c21cf76522c4e854d32b1a58e",
+      "codex": "cfe98ae0cce6adb9af011d5855d5a58721e6c92c21cf76522c4e854d32b1a58e",
+      "cursor": "cfe98ae0cce6adb9af011d5855d5a58721e6c92c21cf76522c4e854d32b1a58e"
+    }
+  },
+  "top_level": {
+    "INSTALL_CLAUDE_CODE.md": true,
+    "INSTALL_CODEX.md": true,
+    "INSTALL_CURSOR.md": true,
+    "README.md": true,
+    "ROUTING_DECISION.md": true,
+    "RUBBERDUCK-CI-BOOTSTRAP.md": true,
+    "RUBBERDUCK-RESPONSE-MARKER.md": true,
+    "RUBBERDUCK-SECURITY-DELTA-GATE.md": true,
+    "RUBBERDUCK-SKILL-ADVISOR.md": true,
+    "SETUP_PROMPT.md": true,
+    "START_REPO_SESSION_PROMPT.md": true,
+    "USE_PROMPTS.md": true,
+    "verification/PROTOCOL_EQUIVALENCE.md": true,
+    "verification/check_skill_routing.py": true,
+    "verification/run_power_skill_synthetic_tests.py": true,
+    "verification/verify_installed_skills.py": true
+  }
+}

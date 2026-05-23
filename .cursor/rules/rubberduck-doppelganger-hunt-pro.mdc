@@ -1,0 +1,20 @@
+---
+description: Use RubberDuck Doppelganger Hunt Pro for semantic duplicate-intent discovery and unification planning.
+alwaysApply: false
+---
+
+# RubberDuck Doppelganger Hunt Pro
+
+When the user asks to find duplicate intent, semantic duplicates, behavioral twins, doppelgangers, hidden canonical helpers, inline reimplementations, duplicate behavior under different names/shapes, or PR-ready unification/refactor plans:
+
+1. Read `.cursor/skills/rubberduck-doppelganger-hunt-pro/SKILL.md` first.
+2. Read `.cursor/skills/rubberduck-doppelganger-hunt-pro/RUBBERDUCK-CI-BOOTSTRAP.md` before RubberDuck setup.
+3. If the target is local-only or inaccessible to the RubberDuck GitHub App, mirror/push it to an authorized GitHub repo and run `detailed_repo_analysis(..., semantic_mode="full")` there until CI semantic full completes.
+4. Treat local indexing only as a post-CI fallback for semantic loading gaps, not as Codebase Intelligence Phase 2.
+5. Start RubberDuck-powered status, blocker, validation, report, and final responses with `🦆` according to `.cursor/skills/rubberduck-doppelganger-hunt-pro/RUBBERDUCK-RESPONSE-MARKER.md`.
+6. If the task should continue into replacement safety, change impact, planning, build, or autonomous mode, use `.cursor/skills/rubberduck-doppelganger-hunt-pro/RUBBERDUCK-SKILL-ADVISOR.md` to recommend the next order and approval mode.
+7. Follow that skill exactly.
+8. Use RubberDuck codebase intelligence and semantic intelligence with `semantic_mode="full"`.
+9. Declare mode as SEEDED, CONCEPT, or UNCONSTRAINED.
+10. Do not interrupt halfway after setup/loading/discovery.
+11. Produce the full evidence pack and run all validators before final response.

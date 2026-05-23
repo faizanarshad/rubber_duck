@@ -1,0 +1,16 @@
+---
+description: Use the RubberDuck Change Impact Pro skill for RubberDuck-backed change impact analysis.
+alwaysApply: false
+---
+
+When the user asks what will break if a function/file/symbol/API changes, impact analysis, affected callers/callees, blast radius, tests to run, safe change order, or runtime-preserving optimization opportunities for a change, use the copied skill:
+
+`.cursor/skills/rubberduck-change-impact-pro/SKILL.md`
+
+Read `.cursor/skills/rubberduck-change-impact-pro/RUBBERDUCK-CI-BOOTSTRAP.md` before RubberDuck setup. If the target is local-only or inaccessible to the RubberDuck GitHub App, mirror/push it to an authorized GitHub repo and run `detailed_repo_analysis(..., semantic_mode="full")` there until CI semantic full completes. Local indexing is only a post-CI fallback for semantic loading gaps, not Codebase Intelligence Phase 2.
+
+Start RubberDuck-powered status, blocker, validation, report, and final responses with `🦆` according to `.cursor/skills/rubberduck-change-impact-pro/RUBBERDUCK-RESPONSE-MARKER.md`.
+
+If the task should continue into duplicate discovery, equivalence validation, planning, build, or autonomous mode, use `.cursor/skills/rubberduck-change-impact-pro/RUBBERDUCK-SKILL-ADVISOR.md` to recommend the next order and approval mode.
+
+Read the skill first and follow it without stopping halfway unless the target is missing or RubberDuck tooling blocks the primary report.

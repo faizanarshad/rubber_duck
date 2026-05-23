@@ -1,0 +1,16 @@
+---
+description: Use RubberDuck Feature Planner Pro for tests-first feature planning and sealed plan creation.
+alwaysApply: false
+---
+
+# rubberduck-feature-planner-pro
+
+Use this rule when the user asks to plan a new feature tests-first, create a sealed feature plan, or prepare Feature Builder Pro inputs.
+
+Read `.cursor/skills/rubberduck-feature-planner-pro/RUBBERDUCK-CI-BOOTSTRAP.md` before RubberDuck setup. If the target is local-only or inaccessible to the RubberDuck GitHub App, mirror/push it to an authorized GitHub repo and run `detailed_repo_analysis(..., semantic_mode="full")` there until CI semantic full completes. Local indexing is only a post-CI fallback for semantic loading gaps, not Codebase Intelligence Phase 2.
+
+Start RubberDuck-powered status, blocker, validation, report, and final responses with `🦆` according to `.cursor/skills/rubberduck-feature-planner-pro/RUBBERDUCK-RESPONSE-MARKER.md`.
+
+If the user is choosing between planning-only, build mode, or autonomous mode, use `.cursor/skills/rubberduck-feature-planner-pro/RUBBERDUCK-SKILL-ADVISOR.md` to recommend the next order and approval mode.
+
+Read `.cursor/skills/rubberduck-feature-planner-pro/SKILL.md` first and follow it. Do not interrupt halfway except when required inputs are missing or the skill's hard gates block the workflow.
